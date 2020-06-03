@@ -15,24 +15,17 @@ This is a git repo serving as a log which documents the experience of learning c
 ### 6.3
 
 - [x] Lec3
-- [ ] Lec4
+- [x] Lec4
 - [ ] Lec5
 - [ ] Dis2
 - [x] Reading Cp1
 - [x] Lec note
 - [ ] Hw1
 
-## Xiaotian
+### 6.4
 
-### 6.2
-
-- [ ] CS184 Lec1
-- [ ] CS184 Lec2
-- [ ] CS184 HW1
-
-
-
-
+- [ ] Lec5
+- [ ] Cp 2
 
 
 
