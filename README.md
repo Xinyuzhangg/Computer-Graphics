@@ -25,7 +25,11 @@ This is a git repo serving as a log which documents the experience of learning c
 ### 6.4
 
 - [ ] Lec5
-- [ ] Cp 2
+- [x] Cp 2
+
+### 6.5
+
+- [x] Cp3
 
 
 

@@ -32,3 +32,116 @@
    * Set a trap
    * Use asserts
 
+### Lec4 
+
+1. $$
+   Linear\  Transform\ =\ Matrices
+   \\ x'=ax+by\\y' = cx+dy
+   \\ \begin{bmatrix} x'\\y'
+   \end{bmatrix}=\begin{bmatrix}
+   a&b\\c&d
+   \end{bmatrix}\begin{bmatrix}
+   x\\y
+   \end{bmatrix}
+   $$
+
+2. $$
+   Affine \ Transformation\\
+   \begin{pmatrix}
+   x'\\y'
+   \end{pmatrix}=
+   \begin{pmatrix}
+   a&b\\c&d
+   \end{pmatrix}
+   \begin{pmatrix}
+   x'\\y'
+   \end{pmatrix}+
+   \begin{pmatrix}
+   t_x\\t_y
+   \end{pmatrix}\\Homogenous \ Coordinate\\
+   \begin{pmatrix}
+   x'\\y'\\1
+   \end{pmatrix}=\begin{pmatrix}
+   a&b&t_x\\c&d&t_y\\0&0&1\\
+   \end{pmatrix}.\begin{pmatrix}
+   x\\y\\1
+   \end{pmatrix}
+   $$
+
+3. 2D transformations
+
+   * Scale $s_x,s_y$
+   * Rotation $R_{\theta}$
+   * Translation $T_{(x,y)}$ 
+
+4. Transform ordering matters
+
+   * Matrices are applied right to left
+
+5. Two interpretations of a transform
+
+   * Transform object
+   * Transform coordinate system
+
+----
+
+## 6.4
+
+### Cp2
+
+1. $atan2(s,c)$ 
+   * Takes an $s$ value propotional to $sinA$ and a $c$ value that scales $cosA$ by the same factor and returns A.
+2. Implicit lines are useful for triangle rasterization
+3. Ray 
+   * All lines, line segments, rays
+4. Linear interpolation 
+   * most common mathematical operation in graphics
+5. Triangles 
+   * fundamental modeling primitive
+   * 2D triangle with vertices $a,b,c$ used to set up a nonorthogonal coordinate system in which any point $p$ can be expressed as the following
+     * $p(\alpha,\beta,\gamma)=\alpha a+\beta b+\gamma c$
+     * $\alpha + \beta + \gamma=1$
+6. Barycentric coordinate
+   * Given a point $p$, a way to compute its barycentric coordinate
+     * 1. Write equation $p(\alpha,\beta,\gamma)=\alpha a+\beta b+\gamma c$
+       2. $\alpha + \beta + \gamma=1$ 
+
+___
+
+## 6.5
+
+### Cp3
+
+1. Raster display
+
+   * Show images as rectangular array of pixels
+
+2. Raster image 
+
+   * A 2D array that stores the pixel value for each pixel
+
+3. Vector image
+
+   * By storing description of shapes
+   * Amouts to storing the instructions for displaying the image rather the pixels needed to display it
+   * Resolution independent
+
+4. Raster devices
+
+   * Output: display, hardcopy
+   * Input: 2D array sensor, 1D array sensor
+
+5. Images stored with floating-point numbers
+
+   * High dynamic range(HDR)--wide range of values
+   * Low dynamic range(LDR)--fixed range of values
+
+6. Two key issues for producing correct images on monitors
+
+   * Monitors are nonlinear with respect to input
+     display intensity = (maximum intensity)$a^\gamma$ 
+
+     > $a$ is the input value
+     > $\gamma$ is to characterize nonlinearity
+
+7. The $\alpha$ value for all pixels in an image might be stored as a fourth channel in an RGB image, in which case it's called *alpha channel* and the image can be called an RGBA image
