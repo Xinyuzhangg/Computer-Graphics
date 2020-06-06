@@ -1,6 +1,6 @@
-# Study Log for Computer-Graphics
+# Log for Computer-Graphics Learning and Research
 
-This is a git repo serving as a log which documents the experience of learning computer graphics and doing research on it, it exbits the collaborative work of Xinyu and Xiaotian every bit of effort and progress will be written on it on a daily basis and we hope we are going to be motivated towards a promising result at the end of the summer and make progress every day!!!
+This is a git repo serving as a log which documents the experience of learning computer graphics and doing research on it, it exhibits the work of Xinyu, every bit of effort and progress will be logged on a daily basis and we hope we are going to be motivated towards a promising result at the end of the summer and make progress every day!!!
 
  
 
@@ -31,7 +31,9 @@ This is a git repo serving as a log which documents the experience of learning c
 
 - [x] Cp3
 
+### 6.6
 
+- [x] Cp8.1-8.3
 
 
 

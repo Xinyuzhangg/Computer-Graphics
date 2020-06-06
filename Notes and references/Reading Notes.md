@@ -145,3 +145,32 @@ ___
      > $\gamma$ is to characterize nonlinearity
 
 7. The $\alpha$ value for all pixels in an image might be stored as a fourth channel in an RGB image, in which case it's called *alpha channel* and the image can be called an RGBA image
+
+---
+
+## 6.6
+
+### Cp8.1-8.3
+
+1. the second major approach to rendering
+   * Drawing objects one by one onto the screen/$object-order\ rendering/rendering\ by\ rasterization$
+2. $Rasterization$
+   * The processing of finding all pixels in an image that are occupied by geometric primitive
+3. $graphics\ pipeline$ 
+   * Starting with objects and ending by updating pixels in the image
+4. Two examples of graphics pipeline
+   * ***Hardware pipeline*** is used to support interactive rendering via APIs 
+   * ***Software pipelines*** is used support APIs in film industry
+5. Four stages of pipeline
+   * *Vertex processing*
+   * *Rasterization*
+   * *Fragment processing*
+   * *Blending*
+6. Two jobs of rasterizer
+   * *enumerates* the pixels that are covered by the primitive 
+   * *Interpolates* values(attributes) across the primitive
+7. Output of the rasterizer is a set of *fragments*
+8. 
+
+
+
