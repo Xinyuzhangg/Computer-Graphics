@@ -35,6 +35,10 @@ This is a git repo serving as a log which documents the experience of learning c
 
 - [x] Cp8.1-8.3
 
+6.7
+
+- [ ] Cp9
+
 
 
 

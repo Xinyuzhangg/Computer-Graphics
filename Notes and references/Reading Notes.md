@@ -152,7 +152,7 @@ ___
 
 ### Cp8.1-8.3
 
-1. the second major approach to rendering
+1. the second major approach to render
    * Drawing objects one by one onto the screen/$object-order\ rendering/rendering\ by\ rasterization$
 2. $Rasterization$
    * The processing of finding all pixels in an image that are occupied by geometric primitive
@@ -170,7 +170,44 @@ ___
    * *enumerates* the pixels that are covered by the primitive 
    * *Interpolates* values(attributes) across the primitive
 7. Output of the rasterizer is a set of *fragments*
-8. 
+8. *Gouraud* interpolation
+   * The color at a point in the triangle with barycentric coordinate$$\\c=\alpha c_0+\beta c_1 + \gamma c_3$$
+9. The most common way to rasterize triangle that avoids the order problem and eliminate holes
+   * Pixels are drawn if and only if their centers are inside the triangle
+10. Dealing with pixels on triangle edges
+    * *Worst* -- not draw the pixel
+    * *Better* -- have both triangles draw
+    * *Better than Better* -- one of the triangles draw
+11. One approach
+    * The edge which off-screen point is on
+12. Two  common approaches for implementing clipping
+    * Using six planes that bound the truncated viewing pyramid
+    * in the 4D transformed space before the homogeneous divide
+13. Before a primitive can be rasterized 
+    * The vertices that define it must be in screen coordinates
+    * Attributes must be known
+14. Date preparing is the job of *vertex precessing stage* of the pipeline
+    * Vertices are transformed, mapped
+    * Other information is transformed 
+15. Simple 2D drawing
+    * Does nothing in the *vertex* and *fragment* stage
+    * The value of fragment overwrites the value of the previous one in the blending stage
+    * Direct supply primitives in the pixel coordinates
+16. *z-buffer* algorithm
+    * Add a value *z* as depth
+    * Track the distance to the closest surface
+    * Throw away fragments that are farther away
+17. * Per-vertex shading
+      * perform in vertex stage, computes shading once for each vertex and never in between vertices
+    * Per-fragment shading
+      * Geometric information needed for shading is passed through the rasterizer as attributes
 
+---
 
+## 6.7
 
+### Cp9
+
+1. Property of convolution
+   * *a* is the sequence
+   * *b* provides the weights
