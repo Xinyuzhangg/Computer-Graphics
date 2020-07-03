@@ -4,15 +4,15 @@
 
 > What specific question will you pursue with your research and why is it important to the field? This section enables you to give the reviewers an overview of your project. Keep in mind that other sections give you an opportunity to develop more details around the background, methodology, and rationale for the project.
 
-We want to research on the computer graphics simulation of the objects falling down and the following shattering and fracturing of the object. 
+We want to research on the physics based simulation of the objects falling down and the following shattering and fracturing of the object. 
 
-In computer graphics, physics based simulation and rendering is one of the most attractive and challenging topics, in this research we want to approximate the real effects in fracturing with the least price in calculation. Generally speaking, we want to come up with a true to life simulation on the shattering of objects and optimize the rendering with faster speed and test it with different materials and geometric shapes.
+In computer graphics, physics based simulation and rendering is one of the most attractive and challenging topics, in this research we want to approximate the real effects in fracturing with the least price in calculation. Generally speaking, we want to come up with a true to life simulation on the shattering of objects and optimize the simulation with faster speed and test it with different materials and geometric shapes. Our plan is to first simulate a rigid body falling onto another rigid body. For example, a glass cup falls onto a marble floor. If the project goes well, we can change the all kinds of properties and materials of these two objects. For example. the glass cup can be switched to a ceramic cup to observe the physical difference between glass material and ceramic material.
 
 ## Background and Rationale
 
 > What is already known about the field of research you will be working on? How does your research project fit in with what is being done currently in the field, and how does it build upon knowledge on the topic or fill in gaps in the field? Please cite references from the literature when applicable; these citations should be listed in #5 of this proposal. 
 
-Simulating the shattering and fracturing of object is hard because the calculation of a large number of particles is expensive and time consuming[^1][^2], and it's difficult to predict the physics model promptly and accurately. There isn't a simulation which can both perfectly fit the physics model and do real-time rendering yet.
+We have learned that physics based simulation can be achieved with many methods, among which are mass-spring system method, finite element method, and particle system method. These methods all have their advantages and disadvantages. For example, using particle systems to simulate the shattering and fracturing of object is hard because the calculation of a large number of particles is expensive and time consuming[^1][^2], and it's difficult to predict the physics model promptly and accurately. There isn't a simulation which can both perfectly fit the physics model and do real-time rendering yet. And our choice of methods requires some serious comparison and justification.
 
 As the physics engine develops, new programming languages provide us with more efficient data structure[^3] and new analytical models[^4] emerge, we expect the simulation of motion, colliding and shattering of different geometries and materials to be more real to life and faster to calculate. We are very excited to combine the most advanced computer graphics progress and see what we can achieve.
 
