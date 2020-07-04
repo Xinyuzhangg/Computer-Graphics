@@ -1,70 +1,114 @@
 # Research Proposal (tentative)
 
-## Research Statement
 
-> What specific question will you pursue with your research and why is it important to the field? This section enables you to give the reviewers an overview of your project. Keep in mind that other sections give you an opportunity to develop more details around the background, methodology, and rationale for the project.
 
-We want to research on the physics based simulation of the objects falling down and the following shattering and fracturing of the object. 
+## 1. Research Statement
 
-In computer graphics, physics based simulation and rendering is one of the most attractive and challenging topics, in this research we want to approximate the real effects in fracturing with the least price in calculation. Generally speaking, we want to come up with a true to life simulation on the shattering of objects and optimize the simulation with faster speed and test it with different materials and geometric shapes. Our plan is to first simulate a rigid body falling onto another rigid body. For example, a glass cup falls onto a marble floor. If the project goes well, we can change the all kinds of properties and materials of these two objects. For example. the glass cup can be switched to a ceramic cup to observe the physical difference between glass material and ceramic material.
+We want to research on the physics based simulation of the objects falling down and the following shattering and fracturing effects. 
 
-## Background and Rationale
+In computer graphics, physics based simulation and rendering is one of the most attractive and challenging topics, in this research we want to approximate the real to life effects in fracturing with the least price in calculation. Generally speaking, we want to come up with a lifelike simulation on the shattering of objects and optimize the simulation with more resonable physics and test it with different materials and geometric shapes. 
 
-> What is already known about the field of research you will be working on? How does your research project fit in with what is being done currently in the field, and how does it build upon knowledge on the topic or fill in gaps in the field? Please cite references from the literature when applicable; these citations should be listed in #5 of this proposal. 
+Firstly, we plan to make a simplification and start with 2D. It's going to be a square, triangle or sphere made up by glass material and falling to the solid ground and then fracturing into 2D fragments, so the physics is much simpler and we can tell if we have applied the right equations.
 
-We have learned that physics based simulation can be achieved with many methods, among which are mass-spring system method, finite element method, and particle system method. These methods all have their advantages and disadvantages. For example, using particle systems to simulate the shattering and fracturing of object is hard because the calculation of a large number of particles is expensive and time consuming[^1][^2], and it's difficult to predict the physics model promptly and accurately. There isn't a simulation which can both perfectly fit the physics model and do real-time rendering yet. And our choice of methods requires some serious comparison and justification.
+Secondly, we are going to simulate in 3D space and adapt the model and its characteristics from 2D to 3D
 
-As the physics engine develops, new programming languages provide us with more efficient data structure[^3] and new analytical models[^4] emerge, we expect the simulation of motion, colliding and shattering of different geometries and materials to be more real to life and faster to calculate. We are very excited to combine the most advanced computer graphics progress and see what we can achieve.
+In the end, if our primitive model is sucessful, we can change into different materials and geometric shapes. For example. the glass cup can be switched to a ceramic cup to observe the physical difference between glass material and ceramic material.
 
-## Timeline
 
-July - October
 
-> Please define the main challenges of your project and what research methods you will use to address these challenges. Describe your research plan for the summer in chronological order - either use a week-by-week timeline or phases approach (i.e. week 1, week 2…or phase 1, phase 2…). Each week/phase should specify goals, action items, and methods. Please include in your plan information about exactly how/when you will check in with your research mentor.
+## 2. Background and Rationale 
 
-## Tools and Programming Languages
+We have learned that physics based simulation can be achieved with many methods, among which are mass-spring system method, finite element method, and particle system method. These methods all have their advantages and disadvantages. For example, using particle systems to simulate the shattering and fracturing of object is hard because the calculation of a large number of particles is expensive and time consuming[^1][^2], and it's difficult to predict the physics model promptly and accurately. There isn't a simulation which can both perfectly fit the physics model and do real-time simulation yet. And our choice of methods requires some serious comparison and justification.
 
-Coding languages: c++, python
+As the physics engine develops and new programming languages emerge, we are provided with more efficient data structure[^3] and new analytical models[^4] , so that we expect to make the simulation of motion, colliding and shattering of different geometries and materials to be more real to life and faster to calculate. We are very excited to combine the most advanced computer graphics progress and see what we can achieve.
 
-Tools and APIs: openGL, ARCSim, Taichi
 
-## Team Members
+
+## 3. Team Members and Advisor
 
 ***Advisor***
 
-* Professor Carlo Sequin
+* **Professor Carlo Sequin**
 
 ***Team Members***
 
-* Peter Generao
+* **Xinyu Zhang** -- **(coordinator)**
+  Specialize in modeling, physics analysis and graphics rendering
 
-* Yuyue Wang
+* **Peter Generao**
+  Specialize in mathemitical calculation and analysis
+* **Yuyue Wang**
+  Specialize in system compiling, debugging and algorithm optimization
+* **Juhan Jin**
+  Specialize in coding and system programming
 
-* Xinyu Zhang
 
-* Juhan Jin
 
-## Task Distribution
+## 4. Timeline
 
-***Early Period***
+### 4.1 General Research Time Length
+
+* **From July to October** 
+  We estimate that the four of us can be dedicated to the research full time and achieve our basic simulation model and code framwork
+* **Since October**
+  After the beginning of the new semester, we expect to take as much available time as possible to do the modification, rectification and optimization until we have a scientificly rigorous and theoretically satisfying result.
+
+### 4.2 Research Phase
+
+#### *Early Period*
 
 * Physics background analysis and mathematical calculation
 * Model optimization and feasibility analysis
 * Geometry modeling
 
-***Middle Period***
+#### *Middle Period*
 
 * Coordination of the project progress
 * Contribution to code
 * Contribution to the paper 
 
-***Late Period***
+#### *Late Period*
 
 * Result optimization
 * Debugging
 * Result visualization and animation
 
-## References
+### 4.3 Regular Team Events Meeting 
+
+#### *Weekly*
+
+* Report progress to the advisor and make a summary via zoom/mail
+
+#### *Daily* 
+
+* Log the daily progress and task completion status
+
+* Task distribution and update
+* Team meeting via zoom and group chat
+
+#### *Irregular*
+
+* Meeting and Solving the problems and difficulties each individual meets and seek for the help of the advisor if necessary
+
+
+
+## 5. Developming Environment
+
+**languages**: C++, Python
+
+**Tools and APIs**: OpenGL, ARCSim, Taichi
+
+**Modeling**: Blender
+
+
+
+## 6. Website and Link
+
+We have set up a GitHub repo to serve the collaboration and update our progress <https://github.com/Xinyuzhangg/Computer-Graphics.git>
+
+
+
+## 7. References
 
 [^1]: James F. O'Brien and Jessica K. Hodgins. "Graphical Modeling and Animation of Brittle Fracture". In Proceedings of ACM SIGGRAPH 1999, pages 137–146. ACM Press/Addison-Wesley Publishing Co., August 1999.
 
